@@ -7,8 +7,16 @@ create-env:
 install:
 	maturin develop
 
-tests:
+rtests:
 	cargo test
+
+ptests:
+	python3 -m pytest -sv
+
+btests:
+	cargo test
+	maturin develop
+	python3 -m pytest -sv
 
 docker-build:
 	docker run --rm -v $$(pwd):/io ghcr.io/pyo3/maturin:v1.7.0 build --target aarch64-apple-darwin --release --out dist --find-interpreter
