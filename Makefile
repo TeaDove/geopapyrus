@@ -3,8 +3,11 @@
 create-env:
 	python3 -m venv .venv
 
+install:
+	maturin develop
+
 tests:
 	cargo test
 
-build:
-	cargo build
+docker-build:
+	docker run --rm -v $$(pwd):/io ghcr.io/pyo3/maturin build --release
