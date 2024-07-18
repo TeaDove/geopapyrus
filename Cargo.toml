@@ -9,3 +9,9 @@ pyo3 = { version = "^0.22.1", features = ["extension-module"]}
 [lib]
 name = "geopapyrus"
 crate-type = ["cdylib"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
