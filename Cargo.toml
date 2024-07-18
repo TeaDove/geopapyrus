@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+geo = "0.28.0"
 pyo3 = { version = "^0.22.1", features = ["extension-module"]}
 
 [lib]
