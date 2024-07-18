@@ -10,4 +10,5 @@ tests:
 	cargo test
 
 docker-build:
-	docker run --rm -v $$(pwd):/io ghcr.io/pyo3/maturin build --release
+	docker run --rm -v $$(pwd):/io ghcr.io/pyo3/maturin:v1.7.0 build --release --universal2 -o dist
+
