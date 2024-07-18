@@ -22,3 +22,11 @@ res = geopapyrus.distance_geodesic_m(
 
 assert res == 1388998.3696851355
 ```
+
+### Performance
+[Source code](https://github.com/TeaDove/geopapyrus/blob/master/pytests/test_distance.py#L53)
+```shell 
+python 0.525 ns
+rust_haversine 0.135 ns
+rust_geodesic 0.135 ns
+```
