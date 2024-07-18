@@ -1,0 +1,11 @@
+[package]
+name = "geopapyrus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "^0.22.1", features = ["auto-initialize"]}
+
+[lib]
+name = "geopapyrus"
+crate-type = ["cdylib"]
