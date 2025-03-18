@@ -1,11 +1,11 @@
 [package]
 name = "geopapyrus"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
-geo = "0.28.0"
-pyo3 = { version = "^0.22.1", features = ["extension-module"]}
+geo = "0.29.3"
+pyo3 = { version = "^0.24.0", features = ["extension-module"]}
 
 [lib]
 name = "geopapyrus"
